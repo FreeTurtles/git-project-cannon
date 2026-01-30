@@ -7,7 +7,6 @@ realm = "shared"
 [dependencies]
 packet = "rajden28/packet@1.7.3"
 promise = "evaera/promise@4.0.0"
-classpp = "tenebrisnoctua/classpp@1.2.1"
 dataservice = "leifstout/dataservice@0.3.2"
 
 [server-dependencies]
