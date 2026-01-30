@@ -5,7 +5,11 @@
 /*.rbxlx.lock
 /*.rbxl.lock
 
+.vscode/
+diagram/
 Packages/
 ServerPackages/
 sourcemap.json
 wally.lock
+gitignore.md
+default.project.json
