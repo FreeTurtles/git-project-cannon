@@ -1,9 +1,10 @@
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerScriptService = game:GetService("ServerScriptService")
+local ServerStorage = game:GetService("ServerStorage")
 
 local Packets = require(ReplicatedStorage.Shared.Packets)
-local ClassPP = require(ReplicatedStorage.Packages.classpp)
+-- local ClassPP = require(ReplicatedStorage.Packages.classpp)
 local Promise = require(ReplicatedStorage.Packages.promise)
 local DataService = require(ReplicatedStorage.Packages.dataservice).server
 --local ProfileStoreTest = require(script.ProfileStoreTest)
@@ -16,22 +17,22 @@ local players = {}
 -- server Data
 --local ProfileStore = if game.RunService:IsServer() then require(ReplicatedStorage.Packages._Index["lm-loleris_profilestore@1.0.3"].profilestore) else nil :: any
 local ProfileStore = require(ReplicatedStorage.Packages._Index["lm-loleris_profilestore@1.0.3"].profilestore)
-local ServerDataTemplate = require(ServerScriptService.Configurations.ServerDataTemplate)
+local ServerDataTemplate = require(ServerStorage.Configurations.ServerDataTemplate)
 local LeaderboardData = ServerDataTemplate.LeaderboardData
 
 -- profiles
-local playerTemplate = require(ServerScriptService.Configurations.PlayerProfileTemplate)
-local templateClass = ClassPP.class("PlayerPublicData")({Public = playerTemplate})
+local playerTemplate = require(ServerStorage.Configurations.PlayerProfileTemplate)
+-- local templateClass = ClassPP.class("PlayerPublicData")({Public = playerTemplate})
 
 -- sales Item Template
-local SalesItems = require(ServerScriptService.Configurations.SalesItems)
+local SalesItems = require(ServerStorage.Configurations.SalesItems)
 
-local SalesItemsCopy = DeepCopyTable(SalesItems)
-local SalesItemsClassPP = ClassPP.class("SalesItems")(SalesItemsCopy)
+-- local SalesItemsCopy = DeepCopyTable(SalesItems)
+-- local SalesItemsClassPP = ClassPP.class("SalesItems")(SalesItemsCopy)
 
- function SalesItemsClassPP.Public:getPrivate(title)
-	 return self.testItem[title]
- end
+--  function SalesItemsClassPP.Public:getPrivate(title)
+	--  return self.testItem[title]
+--  end
 
 -- DataService는 Player profile용. ServerData는 profilestore로 DataService 새로 만들것.
 
