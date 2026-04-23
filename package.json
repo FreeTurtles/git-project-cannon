@@ -1,0 +1,21 @@
+{
+  "name": "roblox-project-cannon",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Roblox game base project using Roblox-TS, Flamework, and Rojo.",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "rojo:serve": "rojo serve",
+    "rojo:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.916",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@flamework/core": "^1.3.2"
+  }
+}

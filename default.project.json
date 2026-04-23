@@ -1,30 +1,39 @@
 {
-  "name": "Tutorial",
+  "name": "ProjectCannon",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
-      "Shared": {
-        "$path": "src/shared"
+      "$className": "ReplicatedStorage",
+      "node_modules": {
+        "$className": "Folder",
+        "@rbxts": {
+          "$path": "node_modules/@rbxts"
+        },
+        "@flamework": {
+          "$path": "node_modules/@flamework"
+        }
       },
-      "Packages": {
-        "$path": "Packages"
+      "Include": {
+        "$path": "include"
+      },
+      "TS": {
+        "$path": "out/shared"
       }
     },
-
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
+      "$className": "ServerScriptService",
+      "TS": {
+        "$path": "out/server"
       }
     },
-
     "StarterPlayer": {
+      "$className": "StarterPlayer",
       "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
+        "$className": "StarterPlayerScripts",
+        "TS": {
+          "$path": "out/client"
         }
       }
     }
-
   }
 }

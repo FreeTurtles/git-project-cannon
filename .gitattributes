@@ -1,0 +1,10 @@
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.rbxl binary
+*.rbxlx binary
+*.rbxm binary
+*.rbxmx binary

@@ -1,12 +1,7 @@
 [package]
-name = "user/tutorial"
+name = "project-cannon/base"
 version = "0.1.0"
-registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
+registry = "https://github.com/UpliftGames/wally-index"
 
 [dependencies]
-packet = "rajden28/packet@1.7.3"
-promise = "evaera/promise@4.0.0"
-dataservice = "leifstout/dataservice@0.3.2"
-
-[server-dependencies]

@@ -1,15 +1,18 @@
-# Project place file
-/Tutorial.rbxlx
+# Node
+node_modules/
+npm-debug.log*
 
-# Roblox Studio lock files
-/*.rbxlx.lock
-/*.rbxl.lock
-
-.vscode/
-diagram/
-Packages/
-ServerPackages/
+# Roblox-TS output
+out/
 sourcemap.json
-wally.lock
-gitignore.md
-default.project.json
+
+# Rojo / Studio generated
+*.rbxl
+*.rbxlx
+*.rbxm
+*.rbxmx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*.log

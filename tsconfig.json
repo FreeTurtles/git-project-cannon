@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "moduleDetection": "force",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "src",
+    "outDir": "out",
+    "types": ["types", "compiler-types"],
+    "typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+    "noLib": true
+  },
+  "include": ["src"]
+}
