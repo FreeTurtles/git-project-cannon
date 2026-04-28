@@ -1,3 +1,14 @@
+---
+title: Setup Reference (Project Cannon)
+owner: project-cannon
+status: active
+updated: 2026-04-28
+tags:
+  - setup
+  - environment
+  - reference
+---
+
 # Setup Reference (Project Cannon)
 
 새 Roblox-TS 기반 프로젝트를 빠르게 재구성하기 위한 설정/구성 참고 문서입니다.
@@ -63,12 +74,12 @@
 
 `default.project.json` 기준:
 
-- `ReplicatedStorage.TS` <- `out/shared`
-- `ServerScriptService.TS` <- `out/server`
-- `StarterPlayer.StarterPlayerScripts.TS` <- `out/client`
-- `ReplicatedStorage.node_modules.@rbxts` <- `node_modules/@rbxts`
-- `ReplicatedStorage.node_modules.@flamework` <- `node_modules/@flamework`
-- `ReplicatedStorage.Include` <- `include`
+- `ReplicatedStorage.TS` maps to `out/shared`
+- `ServerScriptService.TS` maps to `out/server`
+- `StarterPlayer.StarterPlayerScripts.TS` maps to `out/client`
+- `ReplicatedStorage.node_modules.@rbxts` maps to `node_modules/@rbxts`
+- `ReplicatedStorage.node_modules.@flamework` maps to `node_modules/@flamework`
+- `ReplicatedStorage.Include` maps to `include`
 
 의미 요약:
 

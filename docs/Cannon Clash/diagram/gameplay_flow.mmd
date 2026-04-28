@@ -1,0 +1,10 @@
+flowchart TD
+    A[Lobby 20s] --> B[Team Setup 5s]
+    B --> C[Round Countdown 10s]
+    C --> D[Move and Place 15s]
+    D --> E[Turn Loop x8]
+    E --> F{End Condition}
+    F -->|Team Eliminated| G[Round End]
+    F -->|Timer 240s Exceeded| G
+    G --> H[Score and Reward]
+    H --> A

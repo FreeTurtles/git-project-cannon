@@ -5,6 +5,7 @@ npm-debug.log*
 # Roblox-TS output
 out/
 sourcemap.json
+build/
 
 # Rojo / Studio generated
 *.rbxl

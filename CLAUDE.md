@@ -40,3 +40,7 @@
 - 모든 Markdown 문서는 가능한 `200`줄 이내로 유지한다.
 - 문서가 커질 경우 참조 단위별 하위 폴더/파일로 분리한다.
 - 아키텍처/결정은 `docs/project_Structure.md`, 일일 로그는 `docs/Daily_Process.md`에 분리 기록한다.
+- 새로 작성하는 Markdown 문서는 모두 frontmatter를 포함한다.
+  - 권장 필드: `title`, `owner`, `status`, `updated`, `tags`
+- 문서 사이트/빌드 표준은 Moonwave를 사용한다.
+  - `npm run docs:dev`, `npm run docs:build` 스크립트를 기준으로 검증한다.

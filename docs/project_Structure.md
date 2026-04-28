@@ -1,3 +1,13 @@
+---
+title: Project Structure (Architecture & Decisions)
+owner: project-cannon
+status: active
+updated: 2026-04-28
+tags:
+  - architecture
+  - decisions
+---
+
 # Project Structure (Architecture & Decisions)
 
 이 문서는 아키텍처와 의사결정만 기록합니다.  
@@ -81,4 +91,24 @@ Roblox_Project_Cannon/
   - `npm run build` successful
 - Follow-up:
   - 도메인별 `Service`/`Controller` 구조 확장
+
+## [2026-04-28] Documentation Governance Baseline
+- Owner: Agent
+- Category: Docs
+- Context: 문서 수가 증가하면서 포맷/로그 일관성 유지 기준이 필요
+- Decision:
+  - Markdown 문서 frontmatter 표준을 기본 규칙으로 채택
+  - 일일 로그는 `Agent Model` 필드 포함을 필수화
+  - Moonwave 빌드(`npm run docs:build`)를 문서 검증 기준으로 채택
+- Why: 문서 검색성, 자동화 호환성, 이력 추적성을 동시에 확보하기 위해
+- Impact: 신규/수정 문서 작성 시 공통 템플릿 및 빌드 검증 루틴 적용
+- Affected Paths:
+  - `CLAUDE.md`
+  - `docs/Daily_Process.md`
+  - `docs/references/Moonwave_Log_Standard.md`
+  - `package.json`
+- Verification:
+  - `npm run docs:build` successful
+- Follow-up:
+  - 문서 템플릿(`docs/templates`) 표준안 정의
 

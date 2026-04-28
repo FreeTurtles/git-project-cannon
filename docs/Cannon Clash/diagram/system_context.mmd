@@ -1,0 +1,33 @@
+flowchart LR
+    subgraph Client
+      C1[RoundController]
+      C2[CannonController]
+      C3[EffectController]
+      C4[InputController]
+    end
+
+    subgraph Server
+      S1[RoundService]
+      S2[CombatService]
+      S3[DestructionService]
+      S4[ScoreService]
+      S5[ProfileService]
+    end
+
+    subgraph Shared
+      H1[Config]
+      H2[Types]
+      H3[Net Contracts]
+    end
+
+    C1 --> S1
+    C2 --> S2
+    C3 --> S3
+    S2 --> S4
+    S4 --> S5
+    H1 --> C1
+    H1 --> S1
+    H2 --> C2
+    H2 --> S2
+    H3 --> C1
+    H3 --> S1

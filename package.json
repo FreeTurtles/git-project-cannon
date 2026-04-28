@@ -7,11 +7,14 @@
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
     "rojo:serve": "rojo serve",
-    "rojo:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json"
+    "rojo:sourcemap": "rojo sourcemap default.project.json -o sourcemap.json",
+    "docs:dev": "moonwave dev",
+    "docs:build": "moonwave build"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "^3.0.0-types.0",
     "@rbxts/types": "^1.0.916",
+    "moonwave": "^1.3.0",
     "roblox-ts": "^3.0.0",
     "typescript": "^5.9.3"
   },
